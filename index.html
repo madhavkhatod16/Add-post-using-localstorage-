@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-screen">
+    <!-- Top Navigation Header -->
+    <nav class="nav">
+        <button id="addButton" aria-label="Create Post">
+            <img src="https://cdn-icons-png.flaticon.com/128/3161/3161837.png" alt="Add Post">
+        </button>
+        <h2>Instagram</h2>
+        <button aria-label="Notifications">
+            <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="Like">
+        </button>
+    </nav>
+
+    <!-- Create Post Popup Modal -->
+    <div class="post-popup" id="postPopup">
+        <h3>Create Post</h3>
+        <input type="text" id="imageUrl" placeholder="Image URL">
+        <input type="text" id="postTitle" placeholder="Title">
+        <input type="text" id="postDescription" placeholder="Description">
+        <button class="add-post" id="addPost">Add Post</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <!-- Horizontal Stories Container -->
+        <div class="stories">
+            <div class="story-item">
+                <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Your story">
+                <p>Your story</p>
+            </div>
+            <div class="story-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8pwJqOCee4Px87YwqXeP0wFIeNpBdYOeKuzmt3Ip-3g&s=10" alt="Shinchan">
+                <p>Shinchan</p>
+            </div>
+            <div class="story-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRujxphrA4hn5kDza0Li7dQiIU1z-t4s2nJM4p5_KtrNA&s=10" alt="BOB">
+                <p>BOB</p>
+            </div>
+            <div class="story-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnETJ6x7O1Lc-vqpqLlZ2sYPhW9cjXcLEAfAlV343bnQ&s=10" alt="Henry">
+                <p>Henry</p>
+            </div>
+            <div class="story-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpJQv5H8C6uF45Jy6y3n4z4Mld3uhpyOOeGxhLhqU1DA&s=10" alt="Tom">
+                <p>Tom</p>
+            </div>
+            <div class="story-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa5ow56lTnSGT8QkqxApo5y9IV1I345xtL6QMQW61n2A&s=10" alt="P.P">
+                <p>P.P</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Posts Feed -->
+        <div id="posts"></div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <button aria-label="Home"><img src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="Home"></button>
+        <button aria-label="Search"><img src="https://cdn-icons-png.flaticon.com/128/11820/11820168.png" alt="Search"></button>
+        <button aria-label="Reels"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099085.png" alt="Reels"></button>
+        <button aria-label="Direct Messages"><img src="https://cdn-icons-png.flaticon.com/128/151/151773.png" alt="Messages"></button>
+        <button aria-label="Profile"><img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt="Profile"></button>
+    </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
